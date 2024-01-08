@@ -45,6 +45,7 @@ def plot_hyperplane(w, b, color, label):
     y = (-w[0] * x - b) / w[1]
     plt.plot(x, y, color=color, label=label)
 
+
 def downsample_data(X, y, downsample_ratio):
     """
     Downsample the dataset while maintaining the class balance.

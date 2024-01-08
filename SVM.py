@@ -28,7 +28,7 @@ class SVM:
 
         G_max = yG[eligible_i].max()
         G_min = yG[eligible_j].min()
-        
+
         if G_max - G_min < self.kkt_thr:
             return -1, -1
 
